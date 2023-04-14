@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+}
+header{
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buttons{
+    width: 100px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bn{
+    width: 80px;
+    height: 80px;
+    margin :5px;
+    border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 40px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.bn:hover{
+    background-color: #34495e;
+    border-color: white;
+    color: white;
+}
