@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Chat Server </title>
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel = "stylesheet" href = "css/game.css">
+</head>
+<body>
+<div class="firstAbsolute"></div>
+<div id="users"></div>
+<div id="room">
+    <input class="moveToRight" type="text" id="code" placeholder="Enter Room Code"/>
+    <button class="JoinButton" id="btRoom" onclick="enterRoom()">Join</button>
+</div>
+<div class="AU">
+    <div id="userBox" class="small-rectangular-box">
+        <h1 class="activeTitle">Active Users</h1>
+       <div id="activeUsers"> <!-- this box is for the active user list
+        <textarea title="Chat Log" id="log" class = "chat_bg" readonly
+                  style="display: block; width: 100%; height: 600px; resize: none; margin: 0; padding-top: 20px; padding-left:10px; border: 0;"></textarea>-->
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class ="container" >
+    <div class="header">
+        <h1> Chat </h1>
+    </div>
+    <div class="body" id = "body">
+
+    </div>
+    <div class="footer"></div>
+    <form>
+        <input type = "text" name = "">
+        <button>SEND</button>
+    </form>
+</div>
+<div id = "game">
+
+    <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <button>Let's Play</button>
+        </div>
+
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <img class="player-hand" src="images/paper.png" alt="" />
+                <img class="computer-hand" src="images/paper.png" alt="" />
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+    </section>
+</div>
+<body>
+<script src="js/main.js"></script>
+<script src = "js/game.js"></script>
+</body>
+
+</body>
+</html>
