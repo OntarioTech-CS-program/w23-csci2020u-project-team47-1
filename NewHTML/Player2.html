@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Rock Paper Scissors Game">
+    <meta name="author" content="Gosia Pick">
+    <title>Rock Paper Scissors Game - Player 2</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<center>
+    <h1 class="titel">Rock Paper Scissors - Player 2</h1>
+    <br>
+    <div class="row">
+        <div class="column1">
+            <img src="rps.gif" class="responsive"/>
+        </div>
+        <div class="column2">
+            <!-- Changed method from "post" to "get", changed ROCK to rock itd. -->
+            <form action = "http://localhost:8080/scores/player2" method="get">
+                <div class="row-buttons2">
+                    <input class="input" type="submit" name="getPlayer2Choice" value="rock">
+                </div>
+                <div class="row-buttons2">
+                    <input class="input" type="submit" name="getPlayer2Choice" value="paper">
+                </div>
+                <div class="row-buttons2">
+                    <input class="input" type="submit" name="getPlayer2Choice" value="scissors">
+                </div>
+            </form>
+            <br>
+            <form action = "http://localhost:8080/scores" method="get">
+                <div class="row-buttons2">
+                    <input class="input" type="submit" value="SCORES">
+                </div>
+            </form>
+            <form action = "http://localhost:8080/reset" method="post">
+                <div class="row-buttons2">
+                    <input type="hidden" name="resetValue" value="0">
+                    <input class="input" type="submit" name="" value="RESET GAME">
+                </div>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>
