@@ -91,7 +91,17 @@ public class GameRoom {
             return "Invalid number of players";
         }
     }
+
     public boolean isReady() {
-        return (players.size() == 2 && playerReady.keySet().size() == 2);
+        List<Session> players = getPlayers();
+        if (players.size() != 2) {
+            return false;
+        }
+        for (Session player : players) {
+            if (!playerReady.containsKey(player.getId()) || !playerReady.get(player.getId())) {
+                return false;
+            }
+        }
+        return true;
     }
 }

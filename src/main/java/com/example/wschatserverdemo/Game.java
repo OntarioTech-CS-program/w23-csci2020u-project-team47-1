@@ -33,14 +33,20 @@ public class Game
                             for (Session peer : gameRoom.getPlayers()) {
                                 peer.getBasicRemote().sendText("{\"type\": \"game-result\", \"result\": \"" + result + "\"}");
                             }
-                            gameRooms.remove(gameRoom);
+                            // Remove the gameRoom entry from the gameRooms map
+                            for (Map.Entry<String, GameRoom> entry : gameRooms.entrySet()) {
+                                if (entry.getValue().equals(gameRoom)) {
+                                    gameRooms.remove(entry.getKey());
+                                    break;
+                                }
+                            }
                         }
-                    }
-                } else {
-                    gameRoom.setPlayerReady(userID);
-                    if (gameRoom.areAllPlayersReady()) {
-                        for (Session peer : gameRoom.getPlayers()) {
-                            peer.getBasicRemote().sendText("{\"type\": \"game-start\"}");
+                    } else {
+                        gameRoom.setPlayerReady(userID);
+                        if (gameRoom.areAllPlayersReady()) {
+                            for (Session peer : gameRoom.getPlayers()) {
+                                peer.getBasicRemote().sendText("{\"type\": \"game-start\"}");
+                            }
                         }
                     }
                 }
