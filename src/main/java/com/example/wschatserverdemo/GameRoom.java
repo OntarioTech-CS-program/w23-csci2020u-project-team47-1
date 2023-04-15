@@ -92,27 +92,11 @@ public class GameRoom {
         }
     }
 
-<<<<<<< HEAD
-    public boolean isReady()
-    {
+    public boolean isReady() {
         boolean flag = !playerReady.containsValue(false);
-        if (flag == true)
-        {
+        if (flag == true) {
             return true;
         }
         return false;
-=======
-    public boolean isReady() {
-        List<Session> players = getPlayers();
-        if (players.size() != 2) {
-            return false;
-        }
-        for (Session player : players) {
-            if (!playerReady.containsKey(player.getId()) || !playerReady.get(player.getId())) {
-                return false;
-            }
-        }
-        return true;
->>>>>>> 420b47e3cdde5ad9c57684632f8f14372bf8b40c
     }
 }
