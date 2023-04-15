@@ -13,6 +13,9 @@ import java.util.Map;
 @ServerEndpoint(value="/ws/game/{roomID}")
 public class Game
 {
+    private Map<String, GameRoom> gameRooms = new HashMap<>();
+    private Map<String, String> usernames = new HashMap<>();
+
 
     @OnMessage
     public void handleMessage(String message, Session session) throws IOException {
