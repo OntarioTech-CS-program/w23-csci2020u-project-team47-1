@@ -8,7 +8,7 @@ function enterRoom() {
     ws.onmessage = function (event) {
         console.log(event.data);
         let message = JSON.parse(event.data);
-        document.getElementById("log").value += "[" + timestamp() + "] " + message.message + "\n";
+        document.getElementById("body").value += "[" + timestamp() + "] " + message.message + "\n";
     }
 }
 document.getElementById("input").addEventListener("keyup", function (event) {

@@ -91,4 +91,14 @@ public class GameRoom {
             return "Invalid number of players";
         }
     }
+
+    public boolean isReady()
+    {
+        boolean flag = !playerReady.containsValue(false);
+        if (flag == true)
+        {
+            return true;
+        }
+        return false;
+    }
 }
