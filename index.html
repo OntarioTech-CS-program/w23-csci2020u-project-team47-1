@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Rock paper and scissors</title>
 </head>
 <body>
+<nav id="navbar">
+    <ul>
+        <li><a href="index.html">Game</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
 <section class="game">
     <div class="point">
         <div class="=user1-score">
@@ -23,13 +29,28 @@
     <div class="intro">
         <h1>Rock Paper Scissors</h1>
         <button>Click To Play</button>
+
+        <div id="room">
+            <h1 class="JCR" >Join a Game Room</h1>
+            <input class="moveToRight" type="text" id="code" placeholder="Enter Game Server Code"/>
+            <button class="JoinButton" id="btRoom" onclick="enterRoom()">Join</button>
+        </div>
+
+        <div class="firstAbsolute">
+            <div class="cr">
+                <h1 class="openGameServer">Open Game Server</h1>
+                <button id="reloadButton">Reload Game Server</button>
+                <div id="activeGameServer"></div>
+            </div>
+        </div>
+
     </div>
 
     <div class="match fadeOut">
         <h2 class="winner">Choose your move</h2>
         <div class="hands">
-            <img class="user1" src="images/paper.png" alt="" />
-            <img class="user2" src="images/paper.png" alt="" />
+            <img class="user1" src="images/paper.png" alt=" " />
+            <img class="user2" src="images/paper.png" alt=" " />
         </div>
         <div class="options">
             <button class="rock">Rock</button>
@@ -37,8 +58,10 @@
             <button class="scissors">Scissors</button>
         </div>
     </div>
+
 </section>
 
-<script src="main.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
