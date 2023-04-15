@@ -91,4 +91,7 @@ public class GameRoom {
             return "Invalid number of players";
         }
     }
+    public boolean isReady() {
+        return (players.size() == 2 && playerReady.keySet().size() == 2);
+    }
 }
