@@ -13,15 +13,11 @@ body{
     align-items: center;
 }
 
-<<<<<<< HEAD
 
 .container{
     position:absolute;
     left:200px;
     top:100px;
-=======
-.container{
->>>>>>> 420b47e3cdde5ad9c57684632f8f14372bf8b40c
     width: 450px;
     height: 80vh;
     display: flex;
@@ -85,7 +81,6 @@ form button{
 form button:hover{
     background-color: blue;
     transition: 02s ease;
-<<<<<<< HEAD
 }
 #room
 {
@@ -151,6 +146,3 @@ form button:hover{
     left:650px;
 
 }
-=======
-}
->>>>>>> 420b47e3cdde5ad9c57684632f8f14372bf8b40c
