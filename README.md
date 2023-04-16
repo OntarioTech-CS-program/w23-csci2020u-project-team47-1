@@ -1,42 +1,31 @@
-<<<<<<< HEAD
-=======
+
 # w23-csci2020u-project-team47-1
->>>>>>> cbd277e7d9b52b977ef70651633cf09be54a27e9
+
 # INTERACTIVE CLIENT ROOM
 > Course: CSCI 2020U: Software Systems Development and Integration
 
 The following application is a interactive chatroom where clients can chat to each other alongside playing games such as Rock Paper Scissors and having a fun time.
-
-<<<<<<< HEAD
 ## Scope
 * Our goal was to code a Java web application that uses websockets and HTML/javascript/CSS that allows multiple clients to chat and play games at the same time.
 * We want to have the screen show the live chat server on the left side while having the rock paper scissors game on the right side.
 
-=======
->>>>>>> cbd277e7d9b52b977ef70651633cf09be54a27e9
 ## Overview
 * We coded our own application using Java web application.
 * The chat room that we created uses websockets and HTML/Javascript/CSS.
 * Our application allows multiple clients to chat in a room and play games at the same time.
 * Lastly the user needs to be in a room for them to be able to send messages.
-<<<<<<< HEAD
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 ![image.png](image.png)
 
-=======
->>>>>>> cbd277e7d9b52b977ef70651633cf09be54a27e9
 ## HOW TO USE APPLICATION
 **Connect to the websocket**
 * 1st. git clone the repository
 * 2nd. once you have configured and let the IDE install maven and all the necessary requirements
-<<<<<<< HEAD
 * 3rd. create a new local configuration of glassfish with the following configuration shown in
 ![img_3.png](img_3.png)
-=======
-* 3rd. create a new local configuration of glassfish with the following configuration shown in (put img)
->>>>>>> cbd277e7d9b52b977ef70651633cf09be54a27e9
+
 
 ## Chat interaction and functionalities
 
@@ -49,7 +38,6 @@ You will print the timestamp next to each chat message.When the user presses the
 
 **START a new game**
 * Users will have the option to start a new game of rock paper scissors with the clients in the room, keep in mind there must be 2-3 clients in order to play.
-<<<<<<< HEAD
 
 ## Functionality
 We ran into some problems with our chatserver portion of the project. Our goal was to have both the Rock Paper Scissors game
@@ -62,7 +50,5 @@ Overall, the issues we had were not with the rock paper scissors game, but with 
 
 ## Happy Chatting!
 - Roman Ahmad Zeia, Kevin Waran, Ryan Liu, Jathushan Vishsnukaran
-=======
 ## Happy Chatting!
 - Roman Ahmad Zeia, Kevin Waran, Ryan Liu, Jathushan Vishsnukaran
->>>>>>> cbd277e7d9b52b977ef70651633cf09be54a27e9
