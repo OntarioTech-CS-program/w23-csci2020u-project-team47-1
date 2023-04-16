@@ -50,5 +50,4 @@ Overall, the issues we had were not with the rock paper scissors game, but with 
 
 ## Happy Chatting!
 - Roman Ahmad Zeia, Kevin Waran, Ryan Liu, Jathushan Vishsnukaran
-## Happy Chatting!
-- Roman Ahmad Zeia, Kevin Waran, Ryan Liu, Jathushan Vishsnukaran
+
