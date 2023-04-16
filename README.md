@@ -48,6 +48,9 @@ Overall, the issues we had were not with the rock paper scissors game, but with 
 
 **CREATE a new (unique) room code**
 
+## Video Link
+https://youtu.be/FWtn0TvYP-M
+
 ## Happy Chatting!
 - Roman Ahmad Zeia, Kevin Waran, Ryan Liu, Jathushan Vishsnukaran
 
